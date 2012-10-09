@@ -65,9 +65,17 @@
                 <a href="./Holiday.html">Club Holiday</a>
               </li>
               <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
+                <div class="fieldWrapper">
+              <label for="user"></label>
+              <input class="span2" type="text" placeholder="UserName"name="user" id="user">
+            </div>
+            <div class="fieldWrapper">
+              <label for="pass"></label>
+              <input class="span2" type="password" placeholder="Password"name="pass" id="pass">
+              <span id="confirmMessage" class="confirmMessage"></span>
+            </div>
+              <button type="submit" class="btn" onclick="checkPass(); return false;">Sign in</button>
+              <button type="submit" class="btn" onclick="newuser(); return false;">New user</button>
             </form>
               </ul>
           </div>
@@ -75,11 +83,20 @@
       </div>
     </div>
 
-<!--<form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>-->
+
+<!--div class="tutorialWrapper">
+    <form>
+        <div class="fieldWrapper">
+            <label for="user">Username:</label>
+            <input type="text" name="pass1" id="pass1">
+        </div>
+        <div class="fieldWrapper">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" onkeyup="checkPass(); return false;">
+            
+        </div>
+    </form>
+</div-->
 
     
 
@@ -107,13 +124,56 @@
       
       <div class="page-header">
       
-       <h2>Social Events</h2>
-        <p>We have regular events in which anyone is welcome!!</p>
+       <h2>Club Holiday</h2>
+        <p>No Sun just lots of snow!!</p>
+
+        <img src="assets\img\winter.jpeg" alt="">
                 
       </div>
       
    
         </div>
+
+
+        
+          <div class ="row-fluid">
+            <div class = "span9 offset1">
+
+          <p>Each season the club organises a holiday to one of the popular resorts in Europe. The holiday is arranged over the Easter break making it available to all club members. The group size varies each year, based on flight availability and what the demand is expected to be, and can be anything from 50 - 100 people.</p>
+
+          <h4>St.Christoph/St.Anton, Austria Saturday 23rd March - 30th March 2013<h4>       
+
+
+        </div>
+      </div>
+      <div class ="row-fluid">
+            <div class = "span9 offset1">
+
+          <p>Set in a spectacular open snow-bowl 500m above neighbouring St Anton, and just a short skibus ride from Lech & Zürs, the village shares Austria's No. 1 world-class ski area the Arlbeg 
+with the other famous-name resorts.  At 1800m St.Christoph offers snow sure skiing, and puts 
+the savvy skier at the centre of it’s thinking.  Efficient high speed lifts take you from the village 
+to the heart of St.Anton’s slopes; whilst St. Christoph has its own nursery slopes and excellent 
+ski school making it also perfect for beginners and young families.  The village is small, pretty 
+and quiet, attracting a more exclusive cliental; whilst neighbouring St.Anton (a 10 minute free 
+bus ride—busses run until  after 1:00am) offers the main night life, bars, shops, and non ski 
+leisure activities (such as ice skating, curling and sports centre.) </p>
+
+ <img src="assets\img\Arlberg.jpg" alt="">
+
+          <p>Famed in Austria as 'the birthplace of skiing', the magnificent Arlberg is one of those select few 
+ski areas which fully justifies its 'world-class' reputation.  Renowned for its challenging slopes, 
+both on and off-piste, the area also includes many wonderful miles of picturesque intermediate 
+skiing, from high altitude, snow-sure open bowls to picturesque tree-lined pistes down to the 
+valley.  The area has two distinct halves, with St.Christoph perfectly positioned in the middle.  
+St.Anton and its even higher neighbours, St.Christoph and Stuben, are linked with an efficient 
+ski bus service connecting this side of the region with the 
+huge network of slopes surrounding Lech and Zürs,         
+including the excellent 'Borderpark' above Lech.<p>       
+
+
+        </div>
+      </div>
+
               
               
 
@@ -146,6 +206,7 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/password.js"></script>
 
   </body>
 </html>
