@@ -13,7 +13,8 @@ function checkPass()
     var badColor = "#ff6666";
     //Compare the values in the password field 
     //and the confirmation field
-    if(pass.value == pass1.value){
+   // if(pass.value == pass1.value){
+	if(pass.value == "password"){
         //The password + user match. 
         //Set the color to the good color and inform
         //the user that they have entered the correct password 
@@ -21,7 +22,8 @@ function checkPass()
         message.style.color = goodColor;
         message.innerHTML = "Login Successful!"
         //alert("Login Successful!");
-    if(user.value == user1.value)
+   // if(user.value == user1.value)
+   if(user.value == "user"){
         //The password + user match. 
         //Set the color to the good color and inform
         //the user that they have entered the correct password 
@@ -37,11 +39,10 @@ function checkPass()
         user.style.backgroundColor = badColor;
         message.style.color = badColor;
         message.innerHTML = "Login Unsuccessful!"
-        alert("Login Unsuccessful!");
+        //alert("Login Unsuccessful!");
     }
 }  
-
-function newuser()
+/*function newuser()
 {
 var x;
 
@@ -55,4 +56,4 @@ var word=prompt("Please enter your password","password");
   {
   pass1.value = word.value 
   }
-}
+}//
