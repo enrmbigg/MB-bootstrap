@@ -1,6 +1,23 @@
 var user1.value = "user" 
 var pass1.value = "password"
 
+
+function checkPass1()
+{
+
+var pass_entered;
+var password="cool";
+var user_entered;
+var user="cool";
+
+while (pass_entered!=password,user_entered!=user) {
+    user_entered=prompt('Please enter the username:','');
+    pass_entered=prompt('Please enter the password:','');
+}
+self.close();
+}
+
+
 function checkPass()
 {
     //Store the password field objects into variables ...
